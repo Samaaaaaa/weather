@@ -1,0 +1,99 @@
+.width{
+    width: 50px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex p{
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+
+nav li .active{
+    display: block;
+    color: #009ad8 !important;
+    border: 3px solid #009ad8;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+nav li a{
+    Line-height: 21px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    margin: 15px;  
+}
+
+nav li a:hover{
+    display: block;
+    color: #009ad8 !important;
+    border: 3px solid #009ad8;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+body
+{
+    background-color: rgb(30, 32, 43);
+}
+
+section
+{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.bgColor
+{
+    background-color: rgba(30, 32, 43, 0.905);
+}
+
+.bgItemColor
+{
+    background-color:rgba(38, 41, 54, 0.82);
+}
+
+.fs-6
+{
+    font-size: 12px;
+}
+
+.footerImage
+{
+    width: 20px;
+    height: 20px;
+}
+
+.blue
+{
+    color:#009ad8;
+}
+
+footer{
+    background-color: #262936;
+    height: 50vh;
+}
+
+.iconFooter{
+    color: #009ad8 !important;
+    background-color: #1e202b;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

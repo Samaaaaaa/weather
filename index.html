@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+        <div class="container">
+          <img class="width" src="./images/logo2x.png" alt="">
+          <div class="flex ms-3">
+            <a class="navbar-brand text-white" href="#">Weather</a>
+          <p class="text-white">tagline goes here</p>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active text-white px-4" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-4" aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-4" aria-current="page" href="#">Live Camera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-4" aria-current="page" href="#">Photoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white px-4" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <section class="px-3">
+        <div class="container py-5 text-center">
+            <input type="text" class="w-100 mx-auto rounded-5 py-3 px-4 bgColor mb-5 text-white" placeholder="Find your location..." id="search" />
+            <div class="row g-0">
+                <div class="item col-md-4 bgItemColor m-0 rounded-4">
+                    <div class="d-flex justify-content-between py-2 px-3 bgColor text-light rounded-start"id="today-date">
+                        <p id="todayName" class="my-auto"></p>
+                        <span>
+                            <span id="todayNumber" class="my-auto"></span>
+                            <span id="todayMonth" class="my-auto"></span>
+                        </span>
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="todayLocation" class="fs-4"></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-1 fw-bolder">
+                                <span id="todayTemp"></span>
+                                <span><sup>o</sup> C</span>
+                            </span>
+                            <img id="todayImg" src="images/116.png" alt="" />
+                        </div>
+                        <p id="todayText" class="fs-6 blue">sunny</p>
+                    </div>
+                    <div class="item-footer d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <img src="images/icon-umberella.png" class="footerImage me-2" alt="" />
+                            <p id="umbrella">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-wind.png" class="footerImage mx-2" alt="" />
+                            <p id="wind">30 km/h</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/icon-compass.png" class="footerImage mx-2" alt="" />
+                            <p id="windDirection">NNE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-4 m-0 bgColor">
+                    <div class="py-2 text-center bgItemColor text-light" >
+                        <p class="nextName my-auto">Sunday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="nextImg" src="images/113.png" alt="">
+                        <h3>
+                            <span class="nextTemp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="nextMinTemp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="nextText fs-6 blue">partly cloudy</p>
+                    </div>
+                </div>
+                <div class="item col-md-4 m-0 bgItemColor rounded-4">
+                    <div class="py-2 text-center px-3 bgColor text-light rounded-end">
+                        <p class="nextName my-auto">Monday </p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="nextImg" src="images/113.png" alt="">
+                        <h3>
+                            <span class="nextTemp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="nextMinTemp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="nextText fs-6 blue">partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class=" pt-5">
+        <div class="container d-flex justify-content-between">
+        <div class="">
+        <input type="text" class="w-100 mx-auto rounded-5 py-3 px-4 bgColor mb-5 text-white" placeholder="Find your location..." id="search" />
+        <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div> 
+       <div class="">
+            <i class="fa-brands fa-facebook iconFooter"></i>
+            <i class="fa-brands fa-twitter iconFooter"></i>
+            <i class="fa-brands fa-google-plus-g iconFooter"></i>
+            <i class="fa-brands fa-pinterest iconFooter"></i>
+        </div>
+    </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
